@@ -1,0 +1,161 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html, * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+/* Text adjusments */
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -230px;
+}
+
+/*
+ * Footer
+ */
+#push, #footer {
+  height: 230px;
+}
+      
+#footer {
+  display: flex;
+  justify-content: center;
+
+  /* Gradient background as placeholder for now */ 
+    background-image:
+    linear-gradient(
+      to top right, 
+      black, #262626
+    );
+}
+
+#footer .container {
+  align-self: center;
+}
+
+/* Intro */
+.intro {
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  width: 130px;
+  font-size: 1.6em;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s color;
+}
+ 
+.nav a:hover {
+  color: #81FFA0;
+}
+ 
+.nav a.active {
+  color: #81FFA0;
+}
+
+@media (min-width : 320px) {
+.intro {
+    font-size: 2.1em;
+    font-weight: 700;
+  }
+
+  .nav li {
+    width: 100px;
+    font-size: 1.2em;
+  } 
+}
+
+@media (min-width: 480px) {
+  .intro {
+    font-size: 2.3em;
+    font-weight: 700;
+  }
+
+  .nav li {
+    width: 100px;
+    font-size: 1.4em;
+  } 
+}
+
+@media (min-width: 768px) {
+  .nav li {
+    width: 110px;
+    font-size: 1.5em;
+  } 
+
+  .intro {
+    font-size: 2.6em;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro {
+    font-size: 3em;
+    font-weight: 700;
+  }
+
+  .nav li {
+    width: 130px;
+    font-size: 1.6em;
+  }
+}
